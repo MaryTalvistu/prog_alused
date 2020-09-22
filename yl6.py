@@ -1,0 +1,5 @@
+inimeste_arv = input("Sisestage inimeste arv: ")
+kohtade_arv_bussis = input("Sisestage kohtade arv bussis: ")
+busside_arv = int(int(inimeste_arv) / int(kohtade_arv_bussis))
+j22k = int(inimeste_arv) - int(busside_arv) * int(kohtade_arv_bussis)
+print("Inimeste arv " + str(inimeste_arv) + ", kohtade arv bussis " + str(kohtade_arv_bussis) + ", busside arv " + str(busside_arv) + ", mahajäänud inimeste arv " + str(j22k) + ".")
