@@ -10,7 +10,7 @@ if valik == "ise":
     else:
         print("Vahekäigukoht")
 else:
-    loos = randint(1,3)
+    loos = randint(1, 3)
     if loos == 1:
         print("Istekoht loositi. Aknakoht.")
     else:
