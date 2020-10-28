@@ -1,6 +1,13 @@
 # jususliku numbri genereerimiseks impordin randint funktsiooni
 from random import randint
 
+# funktsiooni inimeste_arv loomine
+def inimeste_arv(naiskondade_arv, tugiisikute_arv):
+    return naiskondade_arv * (22 + tugiisikute_arv)
+
+print (inimeste_arv(12,10))
+
+
 # küsin toimumiskohta
 toimumiskoht = input("Kus toimusid maailmameistrivõistlused: ");
 print("Turniirid toimusid " + toimumiskoht)
@@ -25,8 +32,7 @@ for naiskondade_arv in turniiride_nimekiri:
     else:
         tugiisikute_arv = 8
 
-# defineerin funktsiooni inimeste_arv
-
+# turniiril osalejate arvu arvutamine
     inimeste_arv = naiskondade_arv * (22 + tugiisikute_arv)
     print("Turniiril oli " + str(naiskondade_arv) + " naiskonda ja vastavalt inimesi " + str(inimeste_arv))
 
