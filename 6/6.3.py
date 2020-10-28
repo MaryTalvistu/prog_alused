@@ -24,7 +24,7 @@ aasta = jada[2];
 
 def kuu_nimi(kuu):
     kuu = kuu - 1
-    kuud = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli", "august", "september", "oktoober", "november", "detsember"]
+    kuud = ["jaanua", "veebruar", "märts", "aprill", "mai", "juuni", "juuli", "august", "september", "oktoober", "november", "detsember"]
     return(kuud[kuu])
 
 print(päev + kuu_nimi(kuu) + aasta)
