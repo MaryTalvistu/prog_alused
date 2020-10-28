@@ -1,4 +1,4 @@
-# jususliku numbri genereerimiseks impordin randint funktsiooni
+# juhusliku numbri genereerimiseks impordin randint funktsiooni
 from random import randint
 
 # funktsiooni inimeste_arv loomine
@@ -24,16 +24,23 @@ while i <= turniiride_koguarv-1:
     i += 1
 # print(turniiride_nimekiri)
 
-# võtan ühekaupa nimekirjast naiskondade arvud
+# loon kõigepealt tühja osalejate arvu nimekirja, et koondada turniiridel osalenute arvud
+# võtan ühekaupa turniiride nimekirjast naiskondade arvud
 # kui naiskondi rohkem kui 15, siis tugiisikuid 10, muidu 8
+osalejate_arv = []
 for naiskondade_arv in turniiride_nimekiri:
     if naiskondade_arv > 15:
         tugiisikute_arv = 10
     else:
         tugiisikute_arv = 8
 
-# turniiril osalejate arvu arvutamine
+# iga turniiri osalejate arvu arvutamine
     inimeste_arv = naiskondade_arv * (22 + tugiisikute_arv)
+
+    osalejate_arv.append(inimeste_arv)
+
     print("Turniiril oli " + str(naiskondade_arv) + " naiskonda ja vastavalt inimesi " + str(inimeste_arv))
 
-
+# kõigil turniiridel osalenud inimeste arvu kokku arvutamine
+    kokku = sum(osalejate_arv)
+    print("Kokku oli kõigil turniiridel inimesi: " + str(kokku))
